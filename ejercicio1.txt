@@ -1,6 +1,10 @@
-Parcial de Programación 3 Licenciatura en Sistemas
+Parcial de Programación 3
+Licenciatura en Sistemas
 
-Alumno: Plazaola Gabriel DNI: 43084470
+Alumno: Plazaola Gabriel
+DNI: 43084470
+
+Opción seleccionada: Opción 2
 
 Pasos para ejecutar el proyecto (Ejercicio 2):
 

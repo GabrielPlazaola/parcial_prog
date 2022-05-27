@@ -4,6 +4,8 @@ Licenciatura en Sistemas
 Alumno: Plazaola Gabriel
 DNI: 43084470
 
+Opción seleccionada: Opción 2
+
 Pasos para ejecutar el proyecto:
 1) Crear un entorno virtual llamado 'env' en la carpeta 'parcial_prog'
 ../parcial_prog> py -m venv env
