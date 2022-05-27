@@ -19,3 +19,7 @@ Pasos para ejecutar el proyecto:
 ../parcial_prog/parcial> py manage.py runserver
 
 5) Abrir http://127.0.0.1:8000/api/
+
+
+
+El ejercicio 1 se encuentra en el archivo de texto llamado 'Ejercicio1.txt'

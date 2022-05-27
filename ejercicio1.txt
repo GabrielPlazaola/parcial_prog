@@ -1,0 +1,85 @@
+Ejercicio 1:
+
+-------------------------------------------
+Paradigma 1: Paradigma Estructurado
+
+La programación estructurada es un paradigma de programación orientado
+ a mejorar la claridad, calidad y tiempo de desarrollo de un programa de 
+computadora recurriendo únicamente a subrutinas y tres estructuras básicas: 
+secuencia, selección e iteración.
+
+Ejemplo de lenguajes que la utilizan: ALGOL, Pascal, Ada.
+
+Ejemplo de código estructurado (y procedural) en Pascal para hallar el mcd (máximo común divisor) de un número:
+
+function MCD(a,b: integer): integer;
+var c: integer;
+begin
+	while b <> 0 do
+	begin
+		c := a;
+		a := b;
+		b := c mod b
+	end;
+	MCD := b
+end;
+-------------------------------------------
+Paradigma 2: Paradigma Procedural
+
+Se trata de un estilo de programación basado en estructurar el
+código de un programa en componentes, que reciben el nombre
+de procedimientos, subrutinas o funciones.
+
+Ejemplo de lenguajes que la utilizan: Pascal, C++, Javascript.
+
+Ejemplo de código procedural (y estructurado) en Pascal para hallar el mcd (máximo común divisor) de un número:
+
+function MCD(a,b: integer): integer;
+var c: integer;
+begin
+	while b <> 0 do
+	begin
+		c := a;
+		a := b;
+		b := c mod b
+	end;
+	MCD := b
+end;
+-------------------------------------------
+Paradigma 3: Paradigma Lógico
+
+Este paradigma se basa en los conceptos de lógica matemática, se basa en 
+predicados que caracterizan o relacionan a los individuos involucrados y la 
+deducción de las posibles respuestas a una determinada consulta.
+Se construye especificando la información del problema real en una 
+base de conocimiento en un lenguaje formal y el problema se resuelve 
+mediante un mecanismo de inferencia que actúa sobre ella.
+
+Ejemplo de lenguajes que la utilizan: PROLOG
+
+Ejemplo de código lógico en PROLOG para hallar el mcd (máximo común divisor) de un número:
+
+mcd(A,0,D) :- A = D.
+mcd(A,B,D) :- B > 0, C is A mod B, mcd(B,C,D)
+-------------------------------------------
+Paradigma 4: Paradigma Orientado a Objetos
+
+La Programación Orientada a Objetos (POO) es un paradigma que 
+se basa en el concepto de clases y objetos. Este tipo de programación se utiliza para 
+estructurar un programa de software en piezas simples y reutilizables de planos de 
+código (clases) para crear instancias individuales de objetos. 
+
+Ejemplo de lenguajes que la utilizan: Javascript, Python, C++.
+
+Ejemplo de código orientado a objetos:
+
+>>> class Saludo:
+...     mensaje = "Bienvenido "            # Definición de un atributo
+...     def saludar(self, nombre):         # Definición de un método   
+...         print(self.mensaje + nombre)
+...         return
+... 
+>>> s = Saludo()
+>>> s.saludar('Alf')
+
+Bienvenido Alf
