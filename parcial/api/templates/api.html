@@ -101,10 +101,10 @@
                   <b>Teléfono: </b>{{i.telefono}} <br>
                   <b>Depende de: </b>{{i.depende_de}}<br>
                   <b>Email: </b>{{i.email}}<br>
-                  <b>URL: </b>{{i.url}} <br>
-                  <b>Link: </b>{{i.link}} <br>
+                  <b>URL: </b><a href={{i.url}} class="link-primary">{{i.url}}</a> <br>
+                  <b>Link: </b><a href={{i.link}} class="link-primary">{{i.link}}</a> <br>
                   <b>Autoridad: </b>{{i.autoridad}}<br>
-                  <b>Descripción: </b>{{i.descripcion}}<br>
+                  <b>Descripción: </b>{{ i.descripcion|striptags }}<br>
                 </div>
               </div>
             </li>
@@ -134,10 +134,10 @@
                   <b>Teléfono: </b>{{i.telefono}} <br>
                   <b>Depende de: </b>{{i.depende_de}}<br>
                   <b>Email: </b>{{i.email}}<br>
-                  <b>URL: </b>{{i.url}} <br>
-                  <b>Link: </b>{{i.link}} <br>
+                  <b>URL: </b><a href={{i.url}} class="link-primary">{{i.url}}</a> <br>
+                  <b>Link: </b><a href={{i.link}} class="link-primary">{{i.link}}</a> <br>
                   <b>Autoridad: </b>{{i.autoridad}}<br>
-                  <b>Descripción: </b>{{i.descripcion}}<br>
+                  <b>Descripción: </b>{{ i.descripcion|striptags }}<br>
                 </div>
               </div>
             </li>
@@ -167,10 +167,10 @@
                   <b>Teléfono: </b>{{i.telefono}} <br>
                   <b>Depende de: </b>{{i.depende_de}}<br>
                   <b>Email: </b>{{i.email}}<br>
-                  <b>URL: </b>{{i.url}} <br>
-                  <b>Link: </b>{{i.link}} <br>
+                  <b>URL: </b><a href={{i.url}} class="link-primary">{{i.url}}</a> <br>
+                  <b>Link: </b><a href={{i.link}} class="link-primary">{{i.link}}</a> <br>
                   <b>Autoridad: </b>{{i.autoridad}}<br>
-                  <b>Descripción: </b>{{i.descripcion}}<br>
+                  <b>Descripción: </b>{{ i.descripcion|striptags }}<br>
                 </div>
               </div>
             </li>
@@ -199,11 +199,10 @@
                   <b>Teléfono: </b>{{i.telefono}} <br>
                   <b>Depende de: </b>{{i.depende_de}}<br>
                   <b>Email: </b>{{i.email}}<br>
-                  <b>URL: </b>{{i.url}} <br>
-                  <b>Link: </b>{{i.link}} <br>
+                  <b>URL: </b><a href={{i.url}} class="link-primary">{{i.url}}</a> <br>
+                  <b>Link: </b><a href={{i.link}} class="link-primary">{{i.link}}</a> <br>
                   <b>Autoridad: </b>{{i.autoridad}}<br>
-                  <b>Descripción: </b>{{i.descripcion}}<br>
-                  <b>Funciones: </b>{{i.funciones}}<br>
+                  <b>Descripción: </b>{{ i.descripcion|striptags }}<br>
                 </div>
               </div>
             </li>
@@ -228,9 +227,12 @@
                 <div class="col">
                   <b>{{i.titulo}}</b> <br>
                   <b>Bajada: </b>{{i.bajada}} <br>
-                  <b>URL: </b>{{i.url}}<br>
-                  <b>Cuerpo: </b>{{i.cuerpo}} <br>
-                  <b>Documentos: </b>{{i.documentos}} <br>
+                  <b>URL: </b><a href={{i.url}} class="link-primary">{{i.url}}</a> <br>
+                  <b>Cuerpo: </b>{{ i.cuerpo|striptags }}<br>
+                  <b>Documentos: </b> <br>
+                  {% for j in i.documentos %}
+                  <a href={{j}} class="link-primary">{{j}}</a> <br>
+                  {% endfor %}
                 </div>
               </div>
             </li>
@@ -254,16 +256,19 @@
                   <img src={{i.imagen}} alt="Imagen" style="width:280px;">
                 </div>
                 <div class="col">
-                  <b>{{i.titulo}}</b> <br>
+                  <b>{{i.titulo}}</b> <br>  
                   <b>ID: </b>{{i.id}} <br>
-                  <b>URL: </b>{{i.url}} <br>
-                  <b>Link: </b>{{i.link}} <br>
+                  <b>URL: </b><a href={{i.url}} class="link-primary">{{i.url}}</a> <br>
+                  <b>Link: </b><a href={{i.link}} class="link-primary">{{i.link}}</a> <br>
                   <b>Estado: </b>{{i.estado}} <br>
                   <b>Fecha de Inicio: </b>{{i.fecha_inicio}} <br>
                   <b>Fecha de Fin: </b>>{{i.fecha_fin}} <br>
                   <b>Bajada: </b>>{{i.bajada}} <br>
-                  <b>Cuerpo: </b>{{i.cuerpo}} <br>
-                  <b>Documentos: </b>{{i.documentos}} <br>
+                  <b>Cuerpo: </b>{{ i.cuerpo|striptags }}<br>
+                  <b>Documentos: </b> <br>
+                  {% for j in i.documentos %}
+                  <a href={{j}} class="link-primary">{{j}}</a> <br>
+                  {% endfor %}
                 </div>
               </div>
             </li>
